@@ -128,7 +128,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 32482766}
-  - component: {fileID: 32482765}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -136,21 +135,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &32482765
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 32482764}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c51e01acf61a941b78579d6dd60227ee, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  darknessCanvas: {fileID: 1922672721}
-  fadeSpeed: 0.05
-  totalSpotsToHit: 3
 --- !u!4 &32482766
 Transform:
   m_ObjectHideFlags: 0
@@ -1808,8 +1792,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1201419365}
-  - component: {fileID: 1201419364}
   - component: {fileID: 1201419363}
+  - component: {fileID: 1201419366}
   m_Layer: 0
   m_Name: DialogueManager
   m_TagString: Untagged
@@ -1829,24 +1813,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e9a8ca871eeb498883aec647275aa16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextSceneName: Level2
---- !u!114 &1201419364
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1201419362}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6d09cf2e7ab74f9f9bb4b9335debe20, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialoguePanel: {fileID: 463214197}
-  textDisplay: {fileID: 1740102975}
-  typeSpeed: 0.05
-  totalDialogueBlocks: 4
-  nextSceneName: Level2
+  nextSceneName: Level1
 --- !u!4 &1201419365
 Transform:
   m_ObjectHideFlags: 0
@@ -1862,6 +1829,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1201419366
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1201419362}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cc401f2e844f4ff893aaa8c70aa5218, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialoguePanel: {fileID: 463214197}
+  textDisplay: {fileID: 1740102975}
+  typeSpeed: 0.05
+  totalDialogueBlocks: 3
+  nextSceneName: Level2
 --- !u!1 &1264357353
 GameObject:
   m_ObjectHideFlags: 0
@@ -3154,10 +3138,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1997503224}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d9a3188d576648a98b8611fbd6d010d, type: 3}
+  m_Script: {fileID: 11500000, guid: 7b62ec8ac55594003ad3f51a8cef5fad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 3742943017993204859, guid: 8afc3d5fefe3f407f8ce1af0940ad279, type: 3}
+  rotationSpeed: 180
+  mouseVerticaleClamp: {x: -40, y: 40}
+  smoothMouse: 5
+  baseFlySpeed: 8
+  awareness: 0
+  camTransform: {fileID: 104474467}
 --- !u!1 &2015209141
 GameObject:
   m_ObjectHideFlags: 0
@@ -3306,6 +3295,7 @@ GameObject:
   - component: {fileID: 2046080285}
   - component: {fileID: 2046080284}
   - component: {fileID: 2046080283}
+  - component: {fileID: 2046080287}
   m_Layer: 0
   m_Name: StartDialogue
   m_TagString: Untagged
@@ -3340,14 +3330,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed4facf192eeb4517b71c015318b9321, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueLines:
-  - To stop humankind from going extict
-  - Scientists wanted to run experiments on people
-  - You are currently in a simulation
-  - Break out, you must come home
-  - Use W A S D to move!
-  - STILL WORKING ON GAME LOGIC
-  - 
 --- !u!65 &2046080284
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3422,6 +3404,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2046080281}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2046080287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2046080281}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89125bde323d34962ad31f8b2e27bc7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueLines:
+  - To get rid of this weaknesses...
+  - Scientists are testing you... you are inside a simulation
+  - Move using WASD
+  - You must come home
 --- !u!1 &2070812594
 GameObject:
   m_ObjectHideFlags: 0

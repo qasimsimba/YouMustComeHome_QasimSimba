@@ -610,6 +610,7 @@ GameObject:
   - component: {fileID: 58573835}
   - component: {fileID: 58573834}
   - component: {fileID: 58573833}
+  - component: {fileID: 58573838}
   m_Layer: 0
   m_Name: Dialogue1 (1)
   m_TagString: Untagged
@@ -629,10 +630,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed4facf192eeb4517b71c015318b9321, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueLines:
-  - They wore crowns, built for mating and survival
-  - But as their antelors grew bigger...
-  - Their heads bowed under the weight
 --- !u!65 &58573834
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -722,6 +719,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 582133530}
   m_LocalEulerAnglesHint: {x: 0, y: 40.939, z: 0}
+--- !u!114 &58573838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 58573832}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89125bde323d34962ad31f8b2e27bc7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueLines:
+  - Their crowns were used for mating and navigating forests
+  - But as their antelors grew...
+  - Nutrition could not sustain their bones
+  - They slowly started dying
 --- !u!1 &80622071
 GameObject:
   m_ObjectHideFlags: 0
@@ -734,7 +748,7 @@ GameObject:
   - component: {fileID: 80622075}
   - component: {fileID: 80622074}
   - component: {fileID: 80622073}
-  - component: {fileID: 80622072}
+  - component: {fileID: 80622077}
   m_Layer: 0
   m_Name: Dialogue1
   m_TagString: Untagged
@@ -742,22 +756,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &80622072
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 80622071}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed4facf192eeb4517b71c015318b9321, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogueLines:
-  - 8,000 Years Ago...
-  - Nature forged a giant
-  - The Irish Elk had incredible, twelve-foot long antlers !!!
 --- !u!65 &80622073
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -847,6 +845,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 582133530}
   m_LocalEulerAnglesHint: {x: 0, y: 40.939, z: 0}
+--- !u!114 &80622077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 80622071}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89125bde323d34962ad31f8b2e27bc7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueLines:
+  - 8,000 years ago...
+  - The universe created giants, the Irish Elk
+  - Their antelors grew up to 12 feet long!
 --- !u!1001 &91795318
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1158,6 +1172,7 @@ GameObject:
   - component: {fileID: 193184301}
   - component: {fileID: 193184300}
   - component: {fileID: 193184299}
+  - component: {fileID: 193184302}
   m_Layer: 0
   m_Name: MusicManager
   m_TagString: Untagged
@@ -1291,6 +1306,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &193184302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 193184298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cc401f2e844f4ff893aaa8c70aa5218, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialoguePanel: {fileID: 1641976856}
+  textDisplay: {fileID: 342515436}
+  typeSpeed: 0.05
+  totalDialogueBlocks: 3
+  nextSceneName: Level2
 --- !u!4 &197677038 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1491958158751749252, guid: 4c33c3918e8a12b4289d1124e9ca0c1c, type: 3}
@@ -3836,6 +3868,7 @@ GameObject:
   - component: {fileID: 599360884}
   - component: {fileID: 599360883}
   - component: {fileID: 599360882}
+  - component: {fileID: 599360886}
   m_Layer: 0
   m_Name: StartDialogue
   m_TagString: Untagged
@@ -3870,10 +3903,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed4facf192eeb4517b71c015318b9321, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueLines:
-  - CS 426 - Qasim Simba
-  - YOU MUST COME HOME
-  - Press to Start
 --- !u!65 &599360883
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3948,6 +3977,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 599360880}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &599360886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 599360880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89125bde323d34962ad31f8b2e27bc7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueLines:
+  - CS 426 - Qasim Simba
+  - YOU MUST COME HOME
+  - Press to Start
+  - Click to move !
 --- !u!4 &622176798 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1491958158751749252, guid: 4c33c3918e8a12b4289d1124e9ca0c1c, type: 3}
@@ -4013,7 +4059,7 @@ GameObject:
   - component: {fileID: 682290481}
   - component: {fileID: 682290480}
   - component: {fileID: 682290479}
-  - component: {fileID: 682290478}
+  - component: {fileID: 682290483}
   m_Layer: 0
   m_Name: Dialogue1 (2)
   m_TagString: Untagged
@@ -4021,21 +4067,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &682290478
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 682290477}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed4facf192eeb4517b71c015318b9321, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogueLines:
-  - Nutrition could no longer sustain their bones
-  - And they grew too grand for the forest
 --- !u!65 &682290479
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4125,6 +4156,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 582133530}
   m_LocalEulerAnglesHint: {x: 0, y: 40.939, z: 0}
+--- !u!114 &682290483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 682290477}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89125bde323d34962ad31f8b2e27bc7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueLines:
+  - Their mighty antelors led to their demise
+  - And the beautiful beasts went extinct
+  - And that's when humankind emerged..
 --- !u!1001 &712200679
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7311,8 +7358,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1806011366}
-  - component: {fileID: 1806011365}
   - component: {fileID: 1806011367}
+  - component: {fileID: 1806011368}
   m_Layer: 0
   m_Name: DialogueManager
   m_TagString: Untagged
@@ -7320,23 +7367,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1806011365
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1806011364}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6d09cf2e7ab74f9f9bb4b9335debe20, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialoguePanel: {fileID: 1641976856}
-  textDisplay: {fileID: 342515436}
-  typeSpeed: 0.05
-  totalDialogueBlocks: 4
-  nextSceneName: Level2
 --- !u!4 &1806011366
 Transform:
   m_ObjectHideFlags: 0
@@ -7365,6 +7395,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nextSceneName: Level2
+--- !u!114 &1806011368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1806011364}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cc401f2e844f4ff893aaa8c70aa5218, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialoguePanel: {fileID: 1641976856}
+  textDisplay: {fileID: 342515436}
+  typeSpeed: 0.05
+  totalDialogueBlocks: 3
+  nextSceneName: Level2
 --- !u!1 &1809400060
 GameObject:
   m_ObjectHideFlags: 0
@@ -7378,8 +7425,8 @@ GameObject:
   - component: {fileID: 1809400062}
   - component: {fileID: 1809400061}
   - component: {fileID: 1809400065}
-  - component: {fileID: 1809400066}
   - component: {fileID: 1809400067}
+  - component: {fileID: 1809400068}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -7501,19 +7548,6 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!114 &1809400066
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1809400060}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 48864d8aa32fd47a684e38036bb06bc9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  stepDistance: 6
 --- !u!54 &1809400067
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7541,6 +7575,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1809400068
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1809400060}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 040ec7a8d7e744ceaa53ae51c8a0d46c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stepDistance: 2
 --- !u!1 &1859993890 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7402009758359158996, guid: 4ecab060b0afb5d4db61f7f1311b9e24, type: 3}
@@ -11235,7 +11282,7 @@ MonoBehaviour:
   m_OverrideVoxelSize: 0
   m_VoxelSize: 0.16666667
   m_MinRegionArea: 2
-  m_NavMeshData: {fileID: 23800000, guid: a974f7c9777fa482b9d8a49726e468cd, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: 20d13919b372348c4829cb3c775938a6, type: 2}
   m_BuildHeightMesh: 0
 --- !u!64 &7416065232207072527
 MeshCollider:

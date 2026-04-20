@@ -6406,7 +6406,7 @@ MonoBehaviour:
   m_OverrideVoxelSize: 0
   m_VoxelSize: 0.16666667
   m_MinRegionArea: 2
-  m_NavMeshData: {fileID: 23800000, guid: a974f7c9777fa482b9d8a49726e468cd, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: 36191f17f3c1f48419e5a977d121ca8b, type: 2}
   m_BuildHeightMesh: 0
 --- !u!23 &1089690262
 MeshRenderer:
@@ -9705,6 +9705,7 @@ GameObject:
   - component: {fileID: 1573783523}
   - component: {fileID: 1573783522}
   - component: {fileID: 1573783521}
+  - component: {fileID: 1573783526}
   m_Layer: 0
   m_Name: Dialogue1 (2)
   m_TagString: Untagged
@@ -9724,11 +9725,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed4facf192eeb4517b71c015318b9321, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueLines:
-  - But like the antelors of the Irish Elk...
-  - Consiousness has maladaptive properties
-  - We are trapped in the forest of our own minds
-  - It's a weight we all  must carry
 --- !u!65 &1573783522
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9818,6 +9814,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1314442569}
   m_LocalEulerAnglesHint: {x: 0, y: 40.939, z: 0}
+--- !u!114 &1573783526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1573783520}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89125bde323d34962ad31f8b2e27bc7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueLines:
+  - And concsiousness can become maladaptive... like the Elks antelors
 --- !u!1 &1594399421
 GameObject:
   m_ObjectHideFlags: 0
@@ -10365,7 +10375,7 @@ GameObject:
   - component: {fileID: 1648055264}
   - component: {fileID: 1648055263}
   - component: {fileID: 1648055262}
-  - component: {fileID: 1648055261}
+  - component: {fileID: 1648055266}
   m_Layer: 0
   m_Name: Dialogue1 (1)
   m_TagString: Untagged
@@ -10373,21 +10383,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1648055261
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1648055260}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed4facf192eeb4517b71c015318b9321, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogueLines:
-  - It's given us incredible achievement
-  - Morality, civilization, and innovation
 --- !u!65 &1648055262
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10477,6 +10472,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1314442569}
   m_LocalEulerAnglesHint: {x: 0, y: 40.939, z: 0}
+--- !u!114 &1648055266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1648055260}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89125bde323d34962ad31f8b2e27bc7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueLines:
+  - But we are all trapped inside our own forests... our own minds
 --- !u!1001 &1648332716
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10552,8 +10561,8 @@ GameObject:
   - component: {fileID: 1668476492}
   - component: {fileID: 1668476491}
   - component: {fileID: 1668476490}
-  - component: {fileID: 1668476489}
   - component: {fileID: 1668476488}
+  - component: {fileID: 1668476495}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -10588,19 +10597,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &1668476489
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1668476487}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 48864d8aa32fd47a684e38036bb06bc9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  stepDistance: 6
 --- !u!195 &1668476490
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -10715,6 +10711,19 @@ Transform:
   - {fileID: 1316237866}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 2.932, y: 45, z: 0}
+--- !u!114 &1668476495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1668476487}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 040ec7a8d7e744ceaa53ae51c8a0d46c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stepDistance: 2
 --- !u!1 &1670921177
 GameObject:
   m_ObjectHideFlags: 0
@@ -13048,7 +13057,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1991536055}
-  - component: {fileID: 1991536054}
+  - component: {fileID: 1991536056}
   m_Layer: 0
   m_Name: DialogueManager
   m_TagString: Untagged
@@ -13056,23 +13065,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1991536054
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1991536053}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6d09cf2e7ab74f9f9bb4b9335debe20, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialoguePanel: {fileID: 26637811}
-  textDisplay: {fileID: 354426476}
-  typeSpeed: 0.05
-  totalDialogueBlocks: 3
-  nextSceneName: Level3
 --- !u!4 &1991536055
 Transform:
   m_ObjectHideFlags: 0
@@ -13088,6 +13080,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1991536056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1991536053}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cc401f2e844f4ff893aaa8c70aa5218, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialoguePanel: {fileID: 26637811}
+  textDisplay: {fileID: 354426476}
+  typeSpeed: 0.05
+  totalDialogueBlocks: 3
+  nextSceneName: Level3
 --- !u!1001 &1993242691
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13380,7 +13389,7 @@ GameObject:
   - component: {fileID: 2078884224}
   - component: {fileID: 2078884223}
   - component: {fileID: 2078884222}
-  - component: {fileID: 2078884221}
+  - component: {fileID: 2078884226}
   m_Layer: 0
   m_Name: Dialogue1
   m_TagString: Untagged
@@ -13388,22 +13397,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2078884221
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2078884220}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed4facf192eeb4517b71c015318b9321, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogueLines:
-  - Humankind emerged after their extinction
-  - 'Evolution created the most advanced force of conciousness '
-  - Found inside the heads of all of us
 --- !u!65 &2078884222
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13493,6 +13486,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1314442569}
   m_LocalEulerAnglesHint: {x: 0, y: 40.939, z: 0}
+--- !u!114 &2078884226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2078884220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89125bde323d34962ad31f8b2e27bc7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueLines:
+  - After their extinction, evolution  created the strongest force in nature
+  - Human awareness belongs in the heads of all of us
+  - It has transformed how we engage with the world
+  - Bringing morality and innovation alive
 --- !u!1 &2088851081
 GameObject:
   m_ObjectHideFlags: 0

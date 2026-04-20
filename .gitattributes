@@ -8,3 +8,13 @@
 *.cubemap filter=lfs diff=lfs merge=lfs -text
 *.extension filter=lfs diff=lfs merge=lfs -text
 *.mp3 filter=lfs diff=lfs merge=lfs -text
+*.exe filter=lfs diff=lfs merge=lfs -text
+*.dll filter=lfs diff=lfs merge=lfs -text
+*.resS filter=lfs diff=lfs merge=lfs -text
+*.resource filter=lfs diff=lfs merge=lfs -text
+*.assets filter=lfs diff=lfs merge=lfs -text
+*.sharedassets filter=lfs diff=lfs merge=lfs -text
+Output/**/*.exe filter=lfs diff=lfs merge=lfs -text
+Output/**/*.dll filter=lfs diff=lfs merge=lfs -text
+Output/**/*.sharedassets filter=lfs diff=lfs merge=lfs -text
+Output/**/*.assets filter=lfs diff=lfs merge=lfs -text
