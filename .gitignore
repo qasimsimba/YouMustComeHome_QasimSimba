@@ -1,31 +1,16 @@
-# Unity generated folders
-[Ll]ibrary/
-[Tt]emp/
-[Oo]bj/
-[Bb]uild/
-[Bb]uilds/
-[Ll]ogs/
-
-# User-specific files
-UserSettings/
-*.csproj
-*.unityproj
-*.sln
-*.user
-*.userprefs
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
 
 # OS junk
 .DS_Store
 Thumbs.db
 
-# IDE stuff
-.vscode/
-.idea/
-
-# Crash reports
-sysinfo.txt
-
-# Large files (optional if using Git LFS)
+# Large Assets (Optional, but recommended for stability)
 *.zip
 *.mp4
 *.wav
